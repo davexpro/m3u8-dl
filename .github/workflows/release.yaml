@@ -25,3 +25,4 @@ jobs:
         goarch: ${{ matrix.goarch }}
         binary_name: "m3u8-dl"
         extra_files: LICENSE README.md
+        ldflags: "-s -w -extldflags '-static'"
